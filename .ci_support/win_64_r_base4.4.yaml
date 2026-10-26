@@ -1,21 +1,19 @@
+c_compiler:
+- r_clang
+c_compiler_version:
+- '21'
+c_stdlib:
+- vs
 channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
 cran_mirror:
 - https://cloud.r-project.org
-m2w64_c_compiler:
-- gcc
-m2w64_c_compiler_version:
-- '15'
-m2w64_c_stdlib:
-- m2w64-sysroot
-m2w64_c_stdlib_version:
-- '12'
-m2w64_cxx_compiler:
-- gxx
-m2w64_cxx_compiler_version:
-- '15'
+cxx_compiler:
+- r_clang
+cxx_compiler_version:
+- '21'
 pin_run_as_build:
   r-base:
     min_pin: x.x
@@ -24,3 +22,5 @@ r_base:
 - '4.4'
 target_platform:
 - win-64
+tbb_devel:
+- '2023'
