@@ -12,7 +12,7 @@ source:
   sha256: 6d076439020f64f502552ae924e93f62b6fefd2bb5c193987751dc7a48826ebc
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -46,10 +46,10 @@ requirements:
     - cmake                        # [win]
   host:
     - r-base
-    - tbb-devel                    # [not win]
+    - tbb-devel
   run:
     - r-base
-    - tbb-devel                    # [not win]
+    - tbb-devel
     # try to guarantee symbolic links that RcppParallel creates
     # see https://github.com/conda-forge/r-rcppparallel-feedstock/issues/40
     - {{ pin_compatible('tbb', max_pin='x.x') }}  # [not win]
