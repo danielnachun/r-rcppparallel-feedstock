@@ -1,5 +1,5 @@
-set TBB_LIB=%LIBRARY_PREFIX%\lib
-set TBB_INC=%LIBRARY_PREFIX%\include
+set TBB_LIB=%LIBRARY_LIB:\=/%
+set TBB_INC=%LIBRARY_INC:\=/%
 
 copy %RECIPE_DIR%\Makevars.ucrt src
 
